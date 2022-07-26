@@ -8,10 +8,10 @@
 	</parent>
 
 	<groupId>org.jenkins-ci.tools</groupId>
-	<artifactId>git-parameter</artifactId>
+	<artifactId>my-git-parameter</artifactId>
 	<version>0.9.18-SNAPSHOT</version>
 	<packaging>hpi</packaging>
-	<name>Git Parameter Plug-In</name>
+	<name>My Git Parameter Plug-In</name>
 	<description>Adds ability to choose branches, tags  or revisions from git repositories configured in project.</description>
 	<url>https://github.com/jenkinsci/git-parameter-plugin</url>
 	<licenses>

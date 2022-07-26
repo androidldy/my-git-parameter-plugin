@@ -557,7 +557,9 @@ public class GitParameterDefinition extends ParameterDefinition implements Compa
 
         if (getSortMode().getIsUsingSmartSort()) {
             Collections.sort(tags, new SmartNumberStringComparer());
-        } else {
+        }else if (getSortMode().getIsMySmartSort()) {
+            Collections.sort(tags, new MySmartComparer());
+        }  else {
             Collections.sort(tags);
         }
 

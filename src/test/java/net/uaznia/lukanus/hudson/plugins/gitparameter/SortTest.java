@@ -62,6 +62,16 @@ public class SortTest {
     }
 
     @Test
+    public void testSortMode_getIsMySmartSort() {
+        assertFalse(SortMode.NONE.getIsMySmartSort());
+        assertFalse(SortMode.ASCENDING.getIsMySmartSort());
+        assertTrue(SortMode.ASCENDING_SMART.getIsMySmartSort());
+        assertFalse(SortMode.DESCENDING.getIsMySmartSort());
+        assertTrue(SortMode.DESCENDING_SMART.getIsMySmartSort());
+        assertTrue(SortMode.MY_SMART.getIsMySmartSort());
+    }
+
+    @Test
     public void testSortMode_getIsDescending() {
         assertFalse(SortMode.NONE.getIsDescending());
         assertFalse(SortMode.ASCENDING.getIsDescending());
